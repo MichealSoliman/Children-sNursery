@@ -11,6 +11,7 @@ import PhotoGallery from './components/PhotoGallery';
 import BlogNewsSection from './components/blog/BlogNewsSection';
 import FAQ from './components/FAQ';
 import ContactUs from './components/contact/ContactUs';
+import Admissions from './components/admissions/Admissions';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <About />
       <NurserySection/>
       <PhotoGallery/>
+      <Admissions />
       <BlogNewsSection />
       <FAQ />
       <ContactUs />
