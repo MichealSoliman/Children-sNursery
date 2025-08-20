@@ -10,6 +10,7 @@ import NurserySection from './components/NurserySection';
 import PhotoGallery from './components/PhotoGallery';
 import BlogNewsSection from './components/blog/BlogNewsSection';
 import FAQ from './components/FAQ';
+import ContactUs from './components/contact/ContactUs';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <PhotoGallery/>
       <BlogNewsSection />
       <FAQ />
+      <ContactUs />
     <Footer />
     <img src="" alt="" />
     </div>
