@@ -4,10 +4,11 @@ import { Badge } from '@/components/ui/badge.jsx';
 import { Star, Users, BookOpen, Palette, Music, Heart, Shield, Clock } from 'lucide-react';
 
 // استبدل هذه المسارات بمسارات الصور في مشروعك
-import nurseryImage1 from '../assets/blog-1.jpg'; // صورة الحضانة
-import nurseryImage2 from '../assets/blog-2.jpg'; // صورة الأطفال يلعبون
-import educationalMaterial1 from '../assets/blog-3.jpg'; // مواد تعليمية
-import educationalMaterial2 from '../assets/event-1.jpg'; 
+import nurseryImage1 from '../assets/services-1.jpg'; // صورة الحضانة
+import nurseryImage2 from '../assets/services-2.jpg'; // صورة الأطفال يلعبون
+import educationalMaterial1 from '../assets/services-3.jpg'; // مواد تعليمية
+import educationalMaterial2 from '../assets/services-4.jpg'; 
+
 
 const NurserySection = () => {
   const services = [

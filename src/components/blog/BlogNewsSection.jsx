@@ -6,30 +6,23 @@ const BlogNewsSection = () => {
     {
       id: 1,
       title: "نصائح مهمة لتحضير طفلك لأول يوم في الحضانة",
-      excerpt: "كيف تساعدين طفلك على التأقلم مع البيئة الجديدة والاستمتاع بتجربة التعلم الأولى",
-      author: "د. فاطمة الأحمد",
-      
+      excerpt: "كيف تساعدين طفلك على التأقلم مع البيئة الجديدة والاستمتاع بتجربة التعلم الأولى", 
       category: "نصائح الأبوة",
       image: "../src/assets/kindergarten_education.jpg",
-      
       tags: ["تربية", "نصائح", "أطفال"]
     },
     {
       id: 2,
       title: "فعاليات الأسبوع الثقافي في حضانة الأمل",
-      excerpt: "شاهدوا أجمل اللحظات من فعاليات الأسبوع الثقافي وأنشطة الأطفال المتنوعة",
-      author: "إدارة الحضانة",
-      
+      excerpt: "شاهدوا أجمل اللحظات من فعاليات الأسبوع الثقافي وأنشطة الأطفال المتنوعة",  
       category: "أخبار الحضانة",
       image: "../src/assets/kindergarten_activity1.jpeg",
-      
       tags: ["فعاليات", "ثقافة", "أنشطة"]
     },
     {
       id: 3,
       title: "أهمية اللعب في تنمية مهارات الطفل",
       excerpt: "تعرفي على كيفية استخدام اللعب كوسيلة تعليمية فعالة لتطوير قدرات طفلك",
-      author: "أ. سارة محمد",
       category: "تعليم وتطوير",
       image: "../src/assets/kindergarten_classroom.jpg",
       tags: ["تعليم", "لعب", "تطوير"]
@@ -38,7 +31,6 @@ const BlogNewsSection = () => {
       id: 4,
       title: "احتفالية اليوم الوطني في حضانتنا",
       excerpt: "صور وذكريات جميلة من احتفالنا باليوم الوطني السعودي مع أطفالنا الأعزاء",
-      author: "فريق التصوير",
       category: "أخبار الحضانة",
       image: "../src/assets/kindergarten_activity2.jpg",
       tags: ["وطني", "احتفال", "تراث"]
@@ -47,7 +39,6 @@ const BlogNewsSection = () => {
       id: 5,
       title: "كيفية اختيار الحضانة المناسبة لطفلك",
       excerpt: "دليل شامل للأهل لاختيار أفضل حضانة تناسب احتياجات طفلهم وتوقعاتهم",
-      author: "د. أحمد الخالد",
       category: "نصائح الأبوة",
       image: "../src/assets/kindergarten_building.webp",
       tags: ["اختيار", "حضانة", "نصائح"]
@@ -56,7 +47,6 @@ const BlogNewsSection = () => {
       id: 6,
       title: "ورشة الفنون والحرف اليدوية للأطفال",
       excerpt: "تفاصيل ورشة الفنون الجديدة وكيف تساهم في تنمية الإبداع لدى الأطفال",
-      author: "أ. نورا العتيبي",
       category: "أنشطة وفعاليات",
       image: "../src/assets/kindergarten_education.jpg",
       tags: ["فنون", "إبداع", "ورشة"]
@@ -146,19 +136,13 @@ const BlogNewsSection = () => {
                   ))}
                 </div>
 
-                {/* Meta Info */}
-                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-                  <div className="flex items-center gap-2">
-                    <User className="w-4 h-4" />
-                    <span>{post.author}</span>
-                  </div>
-                 
-                </div>
+               
 
                 {/* Read More Button */}
                 <button className="w-full bg-[#023047] text-white py-3 px-4 rounded-xl font-medium hover:from-blue-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group">
+                 <ArrowLeft className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1" />
                   <span>اقرأ المزيد</span>
-                  <ArrowLeft className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1" />
+                  
                   
                 </button>
               </div>

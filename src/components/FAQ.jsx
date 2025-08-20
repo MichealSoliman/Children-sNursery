@@ -114,10 +114,11 @@ const FAQ = () => {
             لا تتردد في التواصل معنا، فريقنا جاهز لمساعدتك
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl">
-              اتصل بنا
+          <button className="bg-[#023047] bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#072838] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl border border-black">
+            اتصل بنا
             </button>
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300">
+
+            <button className="border-2 text-white bg-[#023047] px-8 py-3 rounded-lg font-semibold hover:bg-[#072838] hover:text-white transition-all duration-300">
               احجز زيارة
             </button>
           </div>

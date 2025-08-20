@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Button } from '@/components/ui/button.jsx';
 import { Input } from '@/components/ui/input.jsx';
 import { Textarea } from '@/components/ui/textarea.jsx';
@@ -25,92 +24,11 @@ import {
 } from 'lucide-react';
 
 const Admissions = () => {
-  const [formData, setFormData] = useState({
-    parentName: '',
-    email: '',
-    phone: '',
-    childName: '',
-    childAge: '',
-    address: '',
-    preferredStartDate: '',
-    inquiryType: 'general',
-    message: ''
-  });
 
-  const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-    // Clear error when user starts typing
-    if (errors[name]) {
-      setErrors(prev => ({
-        ...prev,
-        [name]: ''
-      }));
-    }
-  };
+ 
 
-  const validateForm = () => {
-    const newErrors = {};
-    
-    if (!formData.parentName.trim()) {
-      newErrors.parentName = 'اسم ولي الأمر مطلوب';
-    }
-    
-    if (!formData.email.trim()) {
-      newErrors.email = 'البريد الإلكتروني مطلوب';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'البريد الإلكتروني غير صحيح';
-    }
-    
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'رقم الهاتف مطلوب';
-    }
-    
-    if (!formData.childName.trim()) {
-      newErrors.childName = 'اسم الطفل مطلوب';
-    }
-    
-    if (!formData.childAge.trim()) {
-      newErrors.childAge = 'عمر الطفل مطلوب';
-    }
-    
-    return newErrors;
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const newErrors = validateForm();
-    
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
-    
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      alert('تم إرسال طلبك بنجاح! سنتواصل معك خلال 24 ساعة.');
-      setFormData({
-        parentName: '',
-        email: '',
-        phone: '',
-        childName: '',
-        childAge: '',
-        address: '',
-        preferredStartDate: '',
-        inquiryType: 'general',
-        message: ''
-      });
-      setIsSubmitting(false);
-    }, 1000);
-  };
+  
 
   const registrationSteps = [
     {
@@ -356,6 +274,7 @@ const Admissions = () => {
           </Card>
         </div>
 
+       
       </div>
     </section>
   );
