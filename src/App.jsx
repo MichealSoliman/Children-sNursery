@@ -8,6 +8,7 @@ import About from './components/About';
 import OurServices from './components/Services';
 import NurserySection from './components/NurserySection';
 import PhotoGallery from './components/PhotoGallery';
+import BlogNewsSection from './components/blog/BlogNewsSection';
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
       <About />
       <NurserySection/>
       <PhotoGallery/>
+      <BlogNewsSection />
     <Footer />
-    <img src="
-    " alt="" />
+    <img src="" alt="" />
     </div>
   );
 }
