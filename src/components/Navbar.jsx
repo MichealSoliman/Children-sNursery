@@ -22,7 +22,7 @@ const Navbar = () => {
               <Heart className="w-6 h-6 text-white" />
             </div>
             <div className="text-right">
-              <h1 className="text-xl font-bold text-[#023047]">حضانة براعم المستقبل</h1>
+              <h1 className="text-xl font-bold text-[#023047]"> براعم المستقبل</h1>
               <p className="text-xs text-gray-600">رعاية وتعليم بحب</p>
             </div>
           </div>

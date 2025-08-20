@@ -64,11 +64,11 @@ const BlogNewsSection = () => {
   ];
 
   const categories = [
-    { name: "الكل",  active: true },
-    { name: "نصائح الأبوة", active: false },
-    { name: "أخبار الحضانة", active: false },
-    { name: "تعليم وتطوير",  active: false },
-    { name: "أنشطة وفعاليات",  active: false }
+    // { name: "الكل",  active: true },
+    { name: "نصائح الأبوة"},
+    { name: "أخبار الحضانة"},
+    { name: "تعليم وتطوير",},
+    { name: "أنشطة وفعاليات",}
   ];
 
   return (
@@ -93,7 +93,7 @@ const BlogNewsSection = () => {
             <button
               key={index}
               className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 ${
-                category.active
+                category
                   ? 'bg-[#023047] text-white shadow-lg'
                   : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200 hover:border-[#023047]'
               }`}
