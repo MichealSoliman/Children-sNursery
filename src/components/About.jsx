@@ -15,7 +15,7 @@ import {
   Smile
 } from 'lucide-react';
 import '../App.css';
-import nurseryTeamImage from '../assets/rPjG9ThAm9k2.jpg';
+import nurseryTeamImage from '../assets/about.jpg';
 
 const About = () => {
   const stats = [
@@ -72,13 +72,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative overflow-hidden">
-      {/* Background decorative elements */}
-      {/* <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-yellow-200 rounded-full opacity-20 float"></div>
-        <div className="absolute top-40 right-20 w-24 h-24 bg-pink-200 rounded-full opacity-20 bounce-gentle"></div>
-        <div className="absolute bottom-20 left-20 w-28 h-28 bg-blue-200 rounded-full opacity-20 float"></div>
-        <div className="absolute bottom-40 right-10 w-20 h-20 bg-green-200 rounded-full opacity-20 bounce-gentle"></div>
-      </div> */}
+  
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

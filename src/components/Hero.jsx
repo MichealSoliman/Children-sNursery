@@ -1,8 +1,8 @@
 import React from 'react';
 import { ArrowLeft, Star, Heart, Sparkles } from 'lucide-react';
 import '../App.css';
-import nurseryImage from '../assets/509iyt6wIO6l.jpg';
-import playgroundImage from '../assets/xyPYstQkIAf5.jpg';
+import nurseryImage from '../assets/hero-1.jpg';
+import playgroundImage from '../assets/hero-2.jpg';
 
 const Hero = () => {
   return (
