@@ -26,7 +26,7 @@ function App() {
       <FAQ />
       <ContactUs />
     <Footer />
-    <img src="" alt="" />
+    <img src="../public/assets/about.jpg" alt="" />
     </div>
   );
 }

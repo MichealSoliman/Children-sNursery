@@ -34,35 +34,35 @@ const PhotoGallery = ({ images = [], title = "معرض صور حضانتنا", s
     },
     {
       id: 4,
-      src: '../public/assets/galary-4.webp',
+      src: './public/assets/galary-4.webp',
       alt: 'أطفال في الزي السعودي',
       category: 'culture',
       title: 'الثقافة السعودية'
     },
     {
       id: 5,
-      src: '../public/assets/galary-5.jpg',
+      src: './public/assets/galary-5.jpg',
       alt: 'طلاب المرحلة الابتدائية',
       category: 'students',
       title: 'طلابنا'
     },
     {
       id: 6,
-      src: '../public/assets/galary-6.jpg',
+      src: './public/assets/galary-6.jpg',
       alt: 'أطفال في الفصل',
       category: 'classroom',
       title: 'بيئة التعلم'
     },
     {
       id: 7,
-      src: '../public/assets/galary-7.jpg',
+      src: './public/assets/galary-7.jpg',
       alt: 'غرفة اللعب',
       category: 'playroom',
       title: 'غرفة اللعب'
     },
     {
       id: 8,
-      src: '../public/assets/galary-8.jpg',
+      src: './public/assets/galary-8.jpg',
       alt: 'منطقة اللعب الداخلية',
       category: 'playroom',
       title: 'أنشطة اللعب'
