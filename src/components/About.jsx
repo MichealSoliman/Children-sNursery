@@ -15,7 +15,7 @@ import {
   Smile
 } from 'lucide-react';
 import '../App.css';
-import nurseryTeamImage from '../assets/about.jpg';
+import nurseryTeamImage from '../../public/assets/about.jpg';
 
 const About = () => {
   const stats = [

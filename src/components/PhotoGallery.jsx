@@ -13,56 +13,56 @@ const PhotoGallery = ({ images = [], title = "معرض صور حضانتنا", s
   const defaultGalleryData = [
     {
       id: 1,
-      src: './src/assets/galary-1.jpg',
+      src: './public/assets/galary-1.jpg',
       alt: 'مركز رعاية الأطفال',
       category: 'facilities',
       title: 'مرافق الحضانة'
     },
     {
       id: 2,
-      src: './src/assets/galary-2.jpg',
+      src: './public/assets/galary-2.jpg',
       alt: 'أطفال يتعلمون مع المعلم',
       category: 'learning',
       title: 'أنشطة التعلم'
     },
     {
       id: 3,
-      src: './src/assets/galary-3.jpg',
+      src: './public/assets/galary-3.jpg',
       alt: 'فصل دراسي للأطفال',
       category: 'classroom',
       title: 'الفصول الدراسية'
     },
     {
       id: 4,
-      src: './src/assets/galary-4.webp',
+      src: './public/assets/galary-4.webp',
       alt: 'أطفال في الزي السعودي',
       category: 'culture',
       title: 'الثقافة السعودية'
     },
     {
       id: 5,
-      src: './src/assets/galary-5.jpg',
+      src: './public/assets/galary-5.jpg',
       alt: 'طلاب المرحلة الابتدائية',
       category: 'students',
       title: 'طلابنا'
     },
     {
       id: 6,
-      src: './src/assets/galary-6.jpg',
+      src: './public/assets/galary-6.jpg',
       alt: 'أطفال في الفصل',
       category: 'classroom',
       title: 'بيئة التعلم'
     },
     {
       id: 7,
-      src: './src/assets/galary-7.jpg',
+      src: './public/assets/galary-7.jpg',
       alt: 'غرفة اللعب',
       category: 'playroom',
       title: 'غرفة اللعب'
     },
     {
       id: 8,
-      src: './src/assets/galary-8.jpg',
+      src: './public/assets/galary-8.jpg',
       alt: 'منطقة اللعب الداخلية',
       category: 'playroom',
       title: 'أنشطة اللعب'
