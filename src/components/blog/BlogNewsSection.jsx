@@ -2,6 +2,11 @@ import React from 'react';
 import { Calendar, User, ArrowLeft, BookOpen, Heart, Users, Star } from 'lucide-react';
 import './BlogNewsSection.css'
 import img1 from '../../../public/assets/kindergarten_activity1.jpeg';
+import img2 from '../../../public/assets/kindergarten_activity1.jpeg';
+import img3 from '../../../public/assets/kindergarten_classroom.jpg';
+import img4 from '../../../public/assets/kindergarten_activity2.jpg';
+import img5 from '../../../public/assets/kindergarten_building.webp';
+import img6 from '../../../public/assets/kindergarten_education.jpg';
 const BlogNewsSection = () => {
   const blogPosts = [
     {
@@ -17,7 +22,7 @@ const BlogNewsSection = () => {
       title: "فعاليات الأسبوع الثقافي في حضانة الأمل",
       excerpt: "شاهدوا أجمل اللحظات من فعاليات الأسبوع الثقافي وأنشطة الأطفال المتنوعة",  
       category: "أخبار الحضانة",
-      image: "../public/assets/kindergarten_activity1.jpeg",
+      image: img2,
       tags: ["فعاليات", "ثقافة", "أنشطة"]
     },
     {
@@ -25,7 +30,7 @@ const BlogNewsSection = () => {
       title: "أهمية اللعب في تنمية مهارات الطفل",
       excerpt: "تعرفي على كيفية استخدام اللعب كوسيلة تعليمية فعالة لتطوير قدرات طفلك",
       category: "تعليم وتطوير",
-      image: "../public/assets/kindergarten_classroom.jpg",
+      image: img3,
       tags: ["تعليم", "لعب", "تطوير"]
     },
     {
@@ -33,7 +38,7 @@ const BlogNewsSection = () => {
       title: "احتفالية اليوم الوطني في حضانتنا",
       excerpt: "صور وذكريات جميلة من احتفالنا باليوم الوطني السعودي مع أطفالنا الأعزاء",
       category: "أخبار الحضانة",
-      image: "../public/assets/kindergarten_activity2.jpg",
+      image: img4,
       tags: ["وطني", "احتفال", "تراث"]
     },
     {
@@ -41,7 +46,7 @@ const BlogNewsSection = () => {
       title: "كيفية اختيار الحضانة المناسبة لطفلك",
       excerpt: "دليل شامل للأهل لاختيار أفضل حضانة تناسب احتياجات طفلهم وتوقعاتهم",
       category: "نصائح الأبوة",
-      image: "../public/assets/kindergarten_building.webp",
+      image: img5,
       tags: ["اختيار", "حضانة", "نصائح"]
     },
     {
@@ -49,7 +54,7 @@ const BlogNewsSection = () => {
       title: "ورشة الفنون والحرف اليدوية للأطفال",
       excerpt: "تفاصيل ورشة الفنون الجديدة وكيف تساهم في تنمية الإبداع لدى الأطفال",
       category: "أنشطة وفعاليات",
-      image: "../public/assets/kindergarten_education.jpg",
+      image: img6,
       tags: ["فنون", "إبداع", "ورشة"]
     }
   ];
