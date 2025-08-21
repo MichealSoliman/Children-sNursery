@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Filter, Grid, List } from 'lucide-react';
 import { Button } from '@/components/ui/button.jsx';
-
+import img1 from '../../public/assets/galary-1.jpg'
 const PhotoGallery = ({ images = [], title = "معرض صور حضانتنا", subtitle = "اكتشف بيئة التعلم الآمنة والمحفزة التي نوفرها لأطفالكم الأعزاء" }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [filter, setFilter] = useState('all');
@@ -13,7 +13,7 @@ const PhotoGallery = ({ images = [], title = "معرض صور حضانتنا", s
   const defaultGalleryData = [
     {
       id: 1,
-      src: '../public/assets/galary-1.jpg',
+      src: img1,
       alt: 'مركز رعاية الأطفال',
       category: 'facilities',
       title: 'مرافق الحضانة'
