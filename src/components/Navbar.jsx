@@ -78,7 +78,7 @@ const Navbar = () => {
               </a>
             ))}
             <div className="pt-4">
-              <button className="w-full bg-gradient-to-r from-pink-400 to-purple-500 text-white px-6 py-3 rounded-full font-medium hover:from-pink-500 hover:to-purple-600 transition-all duration-300 shadow-lg">
+              <button className="w-full bg-[#023047] text-white px-6 py-3 rounded-full font-medium hover:from-pink-500 hover:to-purple-600 transition-all duration-300 shadow-lg">
                 احجز زيارة
               </button>
             </div>

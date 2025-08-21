@@ -1,12 +1,12 @@
 import React from 'react';
 import { Calendar, User, ArrowLeft, BookOpen, Heart, Users, Star } from 'lucide-react';
 import './BlogNewsSection.css'
-import img1 from '../../../public/assets/kindergarten_activity1.jpeg';
-import img2 from '../../../public/assets/kindergarten_activity1.jpeg';
-import img3 from '../../../public/assets/kindergarten_classroom.jpg';
-import img4 from '../../../public/assets/kindergarten_activity2.jpg';
-import img5 from '../../../public/assets/kindergarten_building.webp';
-import img6 from '../../../public/assets/kindergarten_education.jpg';
+import img1 from '../../../public/assets/blog-1.jpg';
+import img2 from '../../../public/assets/blog-2.jpg';
+import img3 from '../../../public/assets/blog-3.jpg';
+import img4 from '../../../public/assets/blog-4.jpg';
+import img5 from '../../../public/assets/blog-5.webp';
+import img6 from '../../../public/assets/blog-6.jpeg';
 const BlogNewsSection = () => {
   const blogPosts = [
     {
