@@ -12,6 +12,7 @@ import BlogNewsSection from './components/blog/BlogNewsSection';
 import FAQ from './components/FAQ';
 import ContactUs from './components/contact/ContactUs';
 import Admissions from './components/admissions/Admissions';
+import HomeLearningSection from './components/HomeLearningSection';
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
       <Admissions />
       <BlogNewsSection />
       <FAQ />
+        <HomeLearningSection />
       <ContactUs />
+    
     <Footer />
     
     </div>
