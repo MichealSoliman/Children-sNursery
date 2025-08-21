@@ -83,6 +83,8 @@ const HomeLearningSection = () => {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-green-200 to-blue-300 rounded-full opacity-20 blur-3xl"></div>
       </div>
 
+
+
       <div className="container mx-auto px-6 relative z-10">
         {/* Header Section */}
         <motion.div 
