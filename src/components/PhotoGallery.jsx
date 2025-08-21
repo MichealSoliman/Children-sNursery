@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button.jsx';
 import img1 from '../../public/assets/galary-1.jpg'
 import img2 from '../../public/assets/galary-2.jpg'
 import img3 from '../../public/assets/galary-3.jpg'
-import img4 from '../../public/assets/galary-4.jpg'
+// import img4 from '../../public/assets/galary-4.jpg'
 import img5 from '../../public/assets/galary-5.jpg'
 import img6 from '../../public/assets/galary-6.jpg'
 import img7 from '../../public/assets/galary-7.jpg'
@@ -41,7 +41,7 @@ const PhotoGallery = ({ images = [], title = "معرض صور حضانتنا", s
     },
     {
       id: 4,
-      src: img4,
+      
       alt: 'أطفال في الزي السعودي',
       category: 'culture',
       title: 'الثقافة السعودية'

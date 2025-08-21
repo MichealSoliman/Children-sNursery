@@ -1,7 +1,7 @@
 import React from 'react';
 import { Calendar, User, ArrowLeft, BookOpen, Heart, Users, Star } from 'lucide-react';
 import './BlogNewsSection.css'
-import img1 from '../../public/assets/kindergarten_education.jpg';
+import img1 from '../../../public/assets/kindergarten_activity1.jpeg';
 const BlogNewsSection = () => {
   const blogPosts = [
     {
