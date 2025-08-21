@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, User, ArrowLeft, BookOpen, Heart, Users, Star } from 'lucide-react';
 import './BlogNewsSection.css'
+import img1 from '../../public/assets/kindergarten_education.jpg';
 const BlogNewsSection = () => {
   const blogPosts = [
     {
@@ -8,7 +9,7 @@ const BlogNewsSection = () => {
       title: "نصائح مهمة لتحضير طفلك لأول يوم في الحضانة",
       excerpt: "كيف تساعدين طفلك على التأقلم مع البيئة الجديدة والاستمتاع بتجربة التعلم الأولى", 
       category: "نصائح الأبوة",
-      image: "../public/assets/kindergarten_education.jpg",
+      image: img1,
       tags: ["تربية", "نصائح", "أطفال"]
     },
     {
