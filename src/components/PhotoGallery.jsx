@@ -3,6 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Filter, Grid, List } from 'lucide-react';
 import { Button } from '@/components/ui/button.jsx';
 import img1 from '../../public/assets/galary-1.jpg'
+import img2 from '../../public/assets/galary-2.jpg'
+import img3 from '../../public/assets/galary-3.jpg'
+import img4 from '../../public/assets/galary-4.jpg'
+import img5 from '../../public/assets/galary-5.jpg'
+import img6 from '../../public/assets/galary-6.jpg'
+import img7 from '../../public/assets/galary-7.jpg'
+import img8 from '../../public/assets/galary-8.jpg'
 const PhotoGallery = ({ images = [], title = "معرض صور حضانتنا", subtitle = "اكتشف بيئة التعلم الآمنة والمحفزة التي نوفرها لأطفالكم الأعزاء" }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [filter, setFilter] = useState('all');
@@ -20,49 +27,49 @@ const PhotoGallery = ({ images = [], title = "معرض صور حضانتنا", s
     },
     {
       id: 2,
-      src: '../public/assets/galary-2.jpg',
+      src: img2,
       alt: 'أطفال يتعلمون مع المعلم',
       category: 'learning',
       title: 'أنشطة التعلم'
     },
     {
       id: 3,
-      src: '../public/assets/galary-3.jpg',
+      src: img3,
       alt: 'فصل دراسي للأطفال',
       category: 'classroom',
       title: 'الفصول الدراسية'
     },
     {
       id: 4,
-      src: './public/assets/galary-4.webp',
+      src: img4,
       alt: 'أطفال في الزي السعودي',
       category: 'culture',
       title: 'الثقافة السعودية'
     },
     {
       id: 5,
-      src: './public/assets/galary-5.jpg',
+      src: img5,
       alt: 'طلاب المرحلة الابتدائية',
       category: 'students',
       title: 'طلابنا'
     },
     {
       id: 6,
-      src: './public/assets/galary-6.jpg',
+      src: img6,
       alt: 'أطفال في الفصل',
       category: 'classroom',
       title: 'بيئة التعلم'
     },
     {
       id: 7,
-      src: './public/assets/galary-7.jpg',
+      src: img7,
       alt: 'غرفة اللعب',
       category: 'playroom',
       title: 'غرفة اللعب'
     },
     {
       id: 8,
-      src: './public/assets/galary-8.jpg',
+      src: img8,
       alt: 'منطقة اللعب الداخلية',
       category: 'playroom',
       title: 'أنشطة اللعب'
