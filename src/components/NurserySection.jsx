@@ -64,7 +64,6 @@ const NurserySection = () => {
             نقدم أفضل الخدمات التعليمية والترفيهية في بيئة آمنة ومحفزة تساعد على نمو طفلكم بشكل صحي ومتوازن
           </p>
         </div>
-
         {/* Main Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-7xl mx-auto">
           {services.map((service) => {
