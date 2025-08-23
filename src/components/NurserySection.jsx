@@ -1,101 +1,133 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx';
 import { Badge } from '@/components/ui/badge.jsx';
-import { Star, Users, BookOpen, Palette, Music, Heart, Shield, Clock } from 'lucide-react';
+import {
+  Heart, BookOpen, Palette, Music,
+  Languages, Smile, ShieldCheck, Sun
+} from 'lucide-react';
 
-// استبدل هذه المسارات بمسارات الصور في مشروعك
-import nurseryImage1 from '../../public/assets/services-1.jpg'; // صورة الحضانة
-import nurseryImage2 from '../../public/assets/services-2.jpg'; // صورة الأطفال يلعبون
-import educationalMaterial1 from '../../public/assets/services-3.jpg'; // مواد تعليمية
-import educationalMaterial2 from '../../public/assets/services-4.jpg'; 
-
+// نفس الصور المستخدمة
+import nurseryImage1 from '../../public/assets/services-1.jpg';
+import nurseryImage2 from '../../public/assets/services-2.jpg';
+import nurseryImage3 from '../../public/assets/services-3.jpg';
+import nurseryImage4 from '../../public/assets/services-4.jpg';
 
 const NurserySection = () => {
   const services = [
     {
       id: 1,
       title: "الرعاية اليومية المتكاملة",
-      description: "رعاية شاملة للأطفال في بيئة آمنة ومحفزة مع فريق مؤهل من المربيات المتخصصات",
+      description: "نقدم رعاية متكاملة تشمل المتابعة الصحية، الغذاء المتوازن، والنظافة اليومية للأطفال في بيئة دافئة وآمنة.",
       image: nurseryImage1,
       icon: Heart,
-      features: ["رعاية طبية", "وجبات صحية", "بيئة آمنة"]
+      features: ["رعاية طبية", "وجبات صحية", "نظام متابعة يومي"]
     },
     {
       id: 2,
       title: "الأنشطة التعليمية التفاعلية",
-      description: "برامج تعليمية متنوعة تساعد على تنمية المهارات الأساسية والإبداعية للطفل",
+      description: "من خلال التعلم باللعب، يتعلّم الأطفال الحروف والأرقام ويكتسبون المهارات الحركية والاجتماعية بطريقة ممتعة.",
       image: nurseryImage2,
       icon: BookOpen,
-      features: ["تعلم الحروف", "الأرقام", "المهارات الحركية"]
+      features: ["الحروف والأرقام", "تنمية الذكاء", "تعلم تفاعلي"]
     },
     {
       id: 3,
       title: "الفنون والحرف اليدوية",
-      description: "ورش فنية متخصصة لتنمية الإبداع والمهارات الحركية الدقيقة لدى الأطفال",
-      image: educationalMaterial1,
+      description: "نشجع الأطفال على التعبير الفني من خلال الرسم، الطباعة، والأشغال اليدوية لتعزيز الإبداع والثقة بالنفس.",
+      image: nurseryImage3,
       icon: Palette,
-      features: ["الرسم", "الأشغال اليدوية", "النحت"]
+      features: ["رسم وتلوين", "أعمال يدوية", "ورش فنية"]
     },
     {
       id: 4,
       title: "الموسيقى والحركة",
-      description: "جلسات موسيقية تفاعلية تساعد على تطوير الحس الموسيقي والتعبير الحركي",
-      image: educationalMaterial2,
+      description: "نستخدم الموسيقى والرقص كوسيلة للتعبير الحركي وتطوير الحس الموسيقي والقدرات الجسدية.",
+      image: nurseryImage4,
       icon: Music,
-      features: ["الغناء", "الآلات الموسيقية", "الرقص"]
+      features: ["الغناء", "الآلات الموسيقية", "تمارين حركية"]
+    },
+    {
+      id: 5,
+      title: "التعليم المبكر باللغات",
+      description: "تقديم دروس مبسطة باللغة الإنجليزية من خلال القصص والأغاني لتنمية مهارات التواصل منذ الصغر.",
+      image: nurseryImage1,
+      icon: Languages,
+      features: ["مفردات إنجليزية", "أغاني تعليمية", "تفاعل لغوي"]
+    },
+    {
+      id: 6,
+      title: "الدعم السلوكي والنفسي",
+      description: "متابعة سلوك الأطفال ومساعدتهم على التعبير عن مشاعرهم وتعزيز احترام الذات والتفاعل الاجتماعي.",
+      image: nurseryImage2,
+      icon: Smile,
+      features: ["تعزيز الثقة", "دعم عاطفي", "مراقبة سلوكية"]
+    },
+    {
+      id: 7,
+      title: "السلامة والأمان",
+      description: "بيئة آمنة بوسائل حماية متطورة وكاميرات مراقبة لضمان راحة بال الأهالي وحماية الأطفال.",
+      image: nurseryImage3,
+      icon: ShieldCheck,
+      features: ["مخارج طوارئ", "كاميرات مراقبة", "إجراءات وقائية"]
+    },
+    {
+      id: 8,
+      title: "أنشطة الهواء الطلق",
+      description: "مساحات خارجية آمنة لممارسة الأنشطة البدنية والألعاب الحرة التي تنمي المهارات الجسدية والاجتماعية.",
+      image: nurseryImage4,
+      icon: Sun,
+      features: ["ألعاب حركية", "تمارين في الخارج", "أنشطة ترفيهية"]
     }
   ];
 
- 
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-pink-50">
-      {/* Header Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-20">
+        {/* Header */}
         <div className="text-center mb-16">
-         
           <h1 className="text-5xl font-bold text-gray-800 mb-6 leading-tight">
             خدماتنا المتميزة
-            <span className="block  bg-clip-text text-yellow-500">
-              لرعاية أطفالكم
-            </span>
+            <span className="block text-[#149c8c]">لرعاية أطفالكم</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            نقدم أفضل الخدمات التعليمية والترفيهية في بيئة آمنة ومحفزة تساعد على نمو طفلكم بشكل صحي ومتوازن
+            بيئة تعليمية وترفيهية متكاملة مصممة خصيصًا لتطوير مهارات طفلك من خلال برامج فعالة وممتعة
           </p>
         </div>
-        {/* Main Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-7xl mx-auto">
+
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
           {services.map((service) => {
             const IconComponent = service.icon;
             return (
-              <Card key={service.id} className="group bg-white/80 backdrop-blur-sm border-2 border-blue-100 hover:border-[#023047] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3">
+              <Card
+                key={service.id}
+                className="group bg-white border border-gray-200 hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+              >
                 <div className="relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                  <img 
-                    src={service.image} 
+                  <img
+                    src={service.image}
                     alt={service.title}
-                    className="w-full h-56 object-cover group-hover:scale-125 group-hover:rotate-2 transition-all duration-700 ease-out"
+                    className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute top-4 right-4 z-20">
-                    <div className="p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <IconComponent className="w-6 h-6 text-blue-600" />
-                    </div>
+                  <div className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md">
+                    <IconComponent className="w-6 h-6 text-[#149c8c]" />
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
-                <CardHeader className="pb-4 px-6 pt-6">
-                  <CardTitle className="text-2xl font-bold text-gray-800 text-right mb-3 group-hover:text-[#023047] transition-colors duration-300">
+                <CardHeader className="pb-2 pt-4 px-6">
+                  <CardTitle className="text-xl font-bold text-right text-[#149c8c] mb-2">
                     {service.title}
                   </CardTitle>
-                  <CardDescription className="text-gray-600 text-right text-base leading-relaxed">
+                  <CardDescription className="text-gray-600 text-right leading-relaxed text-base">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="px-6 pb-6">
+                <CardContent className="px-6 pb-6 mt-2">
                   <div className="flex flex-wrap gap-2 justify-end">
                     {service.features.map((feature, index) => (
-                      <Badge key={index} className="bg-[#023047] text-white p-2 hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-md">
+                      <Badge
+                        key={index}
+                        className="bg-[#149c8c] text-white px-3 py-1 rounded-full text-sm shadow hover:scale-105 transition-transform"
+                      >
                         {feature}
                       </Badge>
                     ))}
@@ -106,21 +138,19 @@ const NurserySection = () => {
           })}
         </div>
 
-    
-
-        {/* Call to Action */}
-        <div className="text-center bg-[#023047] rounded-3xl p-12 text-white shadow-2xl">
+        {/* CTA */}
+        <div className="text-center bg-[#149c8c] rounded-3xl p-12 mt-24 text-white shadow-2xl">
           <h2 className="text-3xl font-bold mb-4">
             ابدأ رحلة طفلك التعليمية معنا اليوم
           </h2>
-          <p className="text-xl mb-8 opacity-90">
-            انضم إلى عائلة حضانتنا واكتشف الفرق في رعاية وتعليم طفلك
+          <p className="text-lg mb-8 opacity-90">
+            انضم إلى عائلتنا واكتشف الفرق في رعاية وتعليم طفلك بطريقة عصرية وآمنة
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button className="bg-white text-blue-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300">
               احجز زيارة مجانية
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-blue-600 hover:scale-105 transition-all duration-300">
+            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-blue-700 transition-all duration-300">
               تواصل معنا
             </button>
           </div>
@@ -131,6 +161,3 @@ const NurserySection = () => {
 };
 
 export default NurserySection;
-
-
-

@@ -22,7 +22,7 @@ const Navbar = () => {
               <Heart className="w-6 h-6 text-white" />
             </div>
             <div className="text-right">
-              <h1 className="text-xl font-bold text-[#023047]"> براعم المستقبل</h1>
+              <h1 className="text-xl font-bold text-[#149c8c]"> براعم المستقبل</h1>
               <p className="text-xs text-gray-600">رعاية وتعليم بحب</p>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <a
                   key={index}
                   href={item.href}
-                  className="flex items-center space-x-2 rtl:space-x-reverse px-3 py-2 rounded-lg text-gray-700 hover:bg-[#023047] hover:bg-purple-50 transition-all duration-300 hover-lift group"
+                  className="flex items-center space-x-2 rtl:space-x-reverse px-3 py-2 rounded-lg text-gray-700 hover:bg-[#149c8c] hover:bg-purple-50 transition-all duration-300 hover-lift group"
                 >
                   <span className="group-hover:wiggle">{item.icon}</span>
                   <span className="font-medium">{item.name}</span>
@@ -45,7 +45,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button className="bg-[#023047] text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover-lift shadow-lg">
+            <button className="bg-[#149c8c] text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover-lift shadow-lg">
               احجز زيارة
             </button>
           </div>
@@ -78,7 +78,7 @@ const Navbar = () => {
               </a>
             ))}
             <div className="pt-4">
-              <button className="w-full bg-[#023047] text-white px-6 py-3 rounded-full font-medium hover:from-pink-500 hover:to-purple-600 transition-all duration-300 shadow-lg">
+              <button className="w-full bg-[#149c8c] text-white px-6 py-3 rounded-full font-medium hover:from-pink-500 hover:to-purple-600 transition-all duration-300 shadow-lg">
                 احجز زيارة
               </button>
             </div>

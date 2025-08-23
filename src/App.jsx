@@ -15,6 +15,7 @@ import Admissions from './components/admissions/Admissions';
 import HomeLearningSection from './components/HomeLearningSection';
 import ContactButtons from './components/ContactButtons';
 
+
 function App() {
   return (
     <div className="min-h-screen">
@@ -26,8 +27,8 @@ function App() {
       <Admissions />
       <BlogNewsSection />
       <FAQ />
-        <HomeLearningSection />
-      <ContactUs />
+      <HomeLearningSection />
+      
       <Footer />
       <ContactButtons />
     </div>

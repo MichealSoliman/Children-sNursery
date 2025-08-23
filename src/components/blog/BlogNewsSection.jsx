@@ -1,85 +1,103 @@
-import React from 'react';
-import { Calendar, User, ArrowLeft, BookOpen, Heart, Users, Star } from 'lucide-react';
-import './BlogNewsSection.css'
-import img1 from '../../../public/assets/blog-1.jpg';
-import img2 from '../../../public/assets/blog-2.jpg';
-import img3 from '../../../public/assets/blog-3.jpg';
-import img4 from '../../../public/assets/blog-4.jpg';
-import img5 from '../../../public/assets/blog-5.webp';
-import img6 from '../../../public/assets/blog-6.jpeg';
+import React from "react";
+import {
+  Calendar,
+  User,
+  ArrowLeft,
+  BookOpen,
+  Heart,
+  Users,
+  Star,
+} from "lucide-react";
+import "./BlogNewsSection.css";
+import img1 from "../../../public/assets/blog-1.jpg";
+import img2 from "../../../public/assets/blog-2.jpg";
+import img3 from "../../../public/assets/blog-3.jpg";
+import img4 from "../../../public/assets/blog-4.jpg";
+import img5 from "../../../public/assets/blog-5.webp";
+import img6 from "../../../public/assets/blog-6.jpeg";
 const BlogNewsSection = () => {
   const blogPosts = [
     {
       id: 1,
       title: "نصائح مهمة لتحضير طفلك لأول يوم في الحضانة",
-      excerpt: "كيف تساعدين طفلك على التأقلم مع البيئة الجديدة والاستمتاع بتجربة التعلم الأولى", 
+      excerpt:
+        "كيف تساعدين طفلك على التأقلم مع البيئة الجديدة والاستمتاع بتجربة التعلم الأولى",
       category: "نصائح الأبوة",
       image: img1,
-      tags: ["تربية", "نصائح", "أطفال"]
+      tags: ["تربية", "نصائح", "أطفال"],
     },
     {
       id: 2,
       title: "فعاليات الأسبوع الثقافي في حضانة الأمل",
-      excerpt: "شاهدوا أجمل اللحظات من فعاليات الأسبوع الثقافي وأنشطة الأطفال المتنوعة",  
+      excerpt:
+        "شاهدوا أجمل اللحظات من فعاليات الأسبوع الثقافي وأنشطة الأطفال المتنوعة",
       category: "أخبار الحضانة",
       image: img2,
-      tags: ["فعاليات", "ثقافة", "أنشطة"]
+      tags: ["فعاليات", "ثقافة", "أنشطة"],
     },
     {
       id: 3,
       title: "أهمية اللعب في تنمية مهارات الطفل",
-      excerpt: "تعرفي على كيفية استخدام اللعب كوسيلة تعليمية فعالة لتطوير قدرات طفلك",
+      excerpt:
+        "تعرفي على كيفية استخدام اللعب كوسيلة تعليمية فعالة لتطوير قدرات طفلك",
       category: "تعليم وتطوير",
       image: img3,
-      tags: ["تعليم", "لعب", "تطوير"]
+      tags: ["تعليم", "لعب", "تطوير"],
     },
     {
       id: 4,
       title: "احتفالية اليوم الوطني في حضانتنا",
-      excerpt: "صور وذكريات جميلة من احتفالنا باليوم الوطني السعودي مع أطفالنا الأعزاء",
+      excerpt:
+        "صور وذكريات جميلة من احتفالنا باليوم الوطني السعودي مع أطفالنا الأعزاء",
       category: "أخبار الحضانة",
       image: img4,
-      tags: ["وطني", "احتفال", "تراث"]
+      tags: ["وطني", "احتفال", "تراث"],
     },
     {
       id: 5,
       title: "كيفية اختيار الحضانة المناسبة لطفلك",
-      excerpt: "دليل شامل للأهل لاختيار أفضل حضانة تناسب احتياجات طفلهم وتوقعاتهم",
+      excerpt:
+        "دليل شامل للأهل لاختيار أفضل حضانة تناسب احتياجات طفلهم وتوقعاتهم",
       category: "نصائح الأبوة",
       image: img5,
-      tags: ["اختيار", "حضانة", "نصائح"]
+      tags: ["اختيار", "حضانة", "نصائح"],
     },
     {
       id: 6,
       title: "ورشة الفنون والحرف اليدوية للأطفال",
-      excerpt: "تفاصيل ورشة الفنون الجديدة وكيف تساهم في تنمية الإبداع لدى الأطفال",
+      excerpt:
+        "تفاصيل ورشة الفنون الجديدة وكيف تساهم في تنمية الإبداع لدى الأطفال",
       category: "أنشطة وفعاليات",
       image: img6,
-      tags: ["فنون", "إبداع", "ورشة"]
-    }
+      tags: ["فنون", "إبداع", "ورشة"],
+    },
   ];
 
   const categories = [
     // { name: "الكل",  active: true },
-    { name: "نصائح الأبوة"},
-    { name: "أخبار الحضانة"},
-    { name: "تعليم وتطوير",},
-    { name: "أنشطة وفعاليات",}
+    { name: "نصائح الأبوة" },
+    { name: "أخبار الحضانة" },
+    { name: "تعليم وتطوير" },
+    { name: "أنشطة وفعاليات" },
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-green-50 min-h-screen" dir="rtl">
+    <section
+      className="py-16 bg-gradient-to-br from-blue-50 via-white to-green-50 min-h-screen"
+      dir="rtl"
+    >
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-[#023047] rounded-full mb-6">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-[#149c8c] rounded-full mb-6">
             <BookOpen className="w-8 h-8 text-white" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             المدونة والأخبار
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            اكتشفي أحدث النصائح في تربية الأطفال، وتابعي أخبار حضانتنا وفعالياتها المميزة
+            اكتشفي أحدث النصائح في تربية الأطفال، وتابعي أخبار حضانتنا
+            وفعالياتها المميزة
           </p>
         </div>
 
@@ -90,11 +108,11 @@ const BlogNewsSection = () => {
               key={index}
               className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 ${
                 category
-                  ? 'bg-[#023047] text-white shadow-lg'
-                  : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200 hover:border-[#023047]'
+                  ? "bg-[#149c8c] text-white shadow-lg"
+                  : "bg-white text-gray-600 hover:bg-gray-50 border border-gray-200 hover:border-[#023047]"
               }`}
             >
-              {category.name} 
+              {category.name}
             </button>
           ))}
         </div>
@@ -142,14 +160,10 @@ const BlogNewsSection = () => {
                   ))}
                 </div>
 
-               
-
                 {/* Read More Button */}
-                <button className="w-full bg-[#023047] text-white py-3 px-4 rounded-xl font-medium hover:from-blue-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group">
-                 <ArrowLeft className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1" />
+                <button className="w-full bg-[#149c8c] text-white py-3 px-4 rounded-xl font-medium hover:from-blue-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group">
+                  <ArrowLeft className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1" />
                   <span>اقرأ المزيد</span>
-                  
-                  
                 </button>
               </div>
             </article>
@@ -189,13 +203,9 @@ const BlogNewsSection = () => {
             </div>
           </div>
         </div>
-
-       
-      
       </div>
     </section>
   );
 };
 
 export default BlogNewsSection;
-
