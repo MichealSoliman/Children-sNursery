@@ -28,9 +28,8 @@ function App() {
       <FAQ />
         <HomeLearningSection />
       <ContactUs />
-    
-    <Footer />
-    <ContactButtons />
+      <Footer />
+      <ContactButtons />
     </div>
   );
 }
