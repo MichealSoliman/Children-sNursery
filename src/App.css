@@ -1,5 +1,5 @@
 @import "tailwindcss";
-/* مبقاش محتاج tw-animate-css لو حبيت تشيله */
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -43,8 +43,7 @@
 
 :root {
   --radius: 0.625rem;
-
-  /* ألوانك */
+  
   --background: #f5f5f5;
   --foreground: #023047;
 
@@ -98,7 +97,7 @@
   }
 }
 
-/* Animations (لو لسه عايز تستخدمها) */
+
 @keyframes bounce-gentle {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
@@ -127,7 +126,7 @@
   animation: wiggle 1s ease-in-out infinite;
 }
 
-/* Gradient-text اتلغى لأنه بيستخدم تدريج، لو عايز تلونه بلون ثابت: */
+
 .gradient-text {
   color: #219ebc;
 }
