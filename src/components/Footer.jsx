@@ -133,14 +133,12 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-
               <div className="flex items-center space-x-3 rtl:space-x-reverse">
                 <Phone className="w-5 h-5 text-green-400" />
                 <p className="text-purple-100" dir="ltr">
                   +966 11 123 4567
                 </p>
               </div>
-
               <div className="flex items-center space-x-3 rtl:space-x-reverse">
                 <Mail className="w-5 h-5 text-blue-400" />
                 <p className="text-purple-100">info@baraem-future.sa</p>

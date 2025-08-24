@@ -2,6 +2,7 @@
 import React from "react";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
 
+
 const ContactButtons = () => {
   return (
     <div className="fixed bottom-4 left-4 flex flex-col gap-3 z-50">

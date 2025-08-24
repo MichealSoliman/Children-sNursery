@@ -61,7 +61,6 @@ const Hero = () => {
                 تعرف على خدماتنا
               </button>
             </div>
-
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">

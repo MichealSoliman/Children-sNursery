@@ -262,7 +262,6 @@ const HomeLearningSection = () => {
             <p className="text-blue-100 mb-8 text-lg">
               انضم إلى آلاف الأهالي الذين يثقون بنا في تعليم أطفالهم
             </p>
-
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
                 تواصل معنا
@@ -277,5 +276,4 @@ const HomeLearningSection = () => {
     </section>
   );
 };
-
 export default HomeLearningSection;
